@@ -1,0 +1,1 @@
+C:\Users\胖虎\Desktop\Server\LitJson\obj\Debug\netstandard2.0\LitJSON.csprojAssemblyReference.cache

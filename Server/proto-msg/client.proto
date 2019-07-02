@@ -1,0 +1,86 @@
+
+import "common.proto";
+
+package client;
+
+message ClientMsg
+{
+	optional uint32 UID						= 1;
+	optional uint32 ErrorCode				= 2;
+	optional string Time					= 3;
+	optional ReqRegister Register			= 4;
+	optional ReqLogin Login					= 5;
+	
+	optional ReqPraticeLevel PraticeLevel 	= 6;
+	optional ReqActualCombat ActualCombat	= 7;
+	optional ReqCancelMatch CancelMatch		= 8;
+	optional ReqReady Ready					= 9;
+	
+	optional ReqExitLevel ExitLevel			= 10;
+	optional ReqRoleBorn RoleBorn			= 11;
+	optional ReqMove RoleMove				= 12;
+	optional ReqAttack RoleAttack			= 13;
+}
+
+// 注册
+message ReqRegister
+{
+	optional string Account 			= 1;
+	optional string Password			= 2;
+	optional string NickName			= 3;
+}
+
+// 登录
+message ReqLogin
+{
+	optional string AccountName			= 1;
+	optional string Password			= 2;
+}
+
+
+// 练习
+message ReqPraticeLevel
+{
+	optional uint32 PlayerNumber		= 1;
+}
+
+//实战
+message ReqActualCombat
+{
+	optional uint32 PlayerNumber		= 1;
+}
+
+// 取消匹配
+message ReqCancelMatch
+{
+	required common.LevelType LevelType	= 1; 
+}
+
+
+// 准备
+message ReqReady
+{
+	optional uint32 HeroID 				= 1;
+}
+
+// 退出关卡
+message ReqExitLevel
+{
+}
+
+// 角色出生
+message ReqRoleBorn
+{
+}
+
+message ReqMove
+{
+	optional common.Vector3	dest		= 1;
+}
+
+message ReqAttack
+{
+	optional uint32 skillID				= 1;
+	optional uint32 targetID 			= 2;
+}
+

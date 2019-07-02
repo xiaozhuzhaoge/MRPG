@@ -1,0 +1,127 @@
+
+import "common.proto";
+package server;
+
+message ServerMsg
+{
+	optional uint32 UID						= 1;
+	optional uint32 ErrorCode				= 2;
+	optional string Time					= 3;
+	
+	optional RespRegister Register			= 4;
+	optional RespLogin	Login				= 5;
+	
+	optional RespPraticeLevel PraticeLevel	= 6;
+	optional RespActualCombat ActualCombat  = 7;
+	optional RespCancelMatch CancelMatch	= 8;
+	optional NotifyChooseHero ChooseHero	= 9;
+	optional NotifyReady Ready				= 10;
+	optional NotifyEnterLevel EnterLevel	= 11;
+	
+	optional NotifyRoleBorn RoleBorn		= 12;
+	optional NotifyRoleDie RoleDie			= 13;
+	optional NotifyRoleMove RoleMove		= 14;
+	optional NotifyRoleIdle RoleIdle		= 15;
+	optional NotifyRoleAttack RoleAttack	= 16;
+
+	optional NotifyHPChange HPChange		= 17;
+}
+
+// 注册
+message RespRegister
+{
+	optional string Account				= 1;
+	optional string Password			= 2;
+}
+
+// 登录
+message RespLogin
+{
+	optional string Account				= 1;
+	optional string Password			= 2;
+}
+
+// 练习
+message RespPraticeLevel
+{
+	optional uint32 PlayerNumber		= 1;
+}
+
+// 实战
+message RespActualCombat
+{
+	optional uint32 PlayerNumber		= 1;
+}
+
+// 取消匹配
+message RespCancelMatch
+{
+	required common.LevelType LevelType	= 1; 
+}
+
+// 匹配账号信息
+message MatchAccountInfo
+{
+	optional uint32 Index 				= 1;
+	optional string AccountName			= 2;
+	required common.RoleSide RoleSide  	= 3;
+}
+
+// 通知选择英雄
+message NotifyChooseHero
+{
+	required common.LevelType LevelType	= 1; 
+	repeated uint32 OptionalHeros		= 2;
+	repeated MatchAccountInfo Accounts 	= 3;
+}
+
+// 通知匹配中所有玩家某个玩家已经准备好
+message NotifyReady
+{
+	optional string AccountName			= 1;
+	optional uint32 HeroID				= 2;
+}
+
+// 通知匹配中所有玩家进入战斗
+message NotifyEnterLevel
+{
+	required common.LevelType LevelType	= 1;
+	optional uint32 PlayerNumber		= 2;	
+	repeated common.RoleData RoleList	= 3;
+}
+
+message NotifyRoleBorn
+{
+	repeated common.RoleData RoleList	= 1;
+}
+
+message NotifyRoleDie
+{
+	optional uint32 globalRoleID 		= 1;
+}
+
+message NotifyRoleMove
+{
+	optional uint32 globalRoleID		= 1;
+	optional common.Vector3 position	= 2;
+}
+
+message NotifyRoleIdle
+{
+	optional uint32 globalRoleID		= 1;	
+	optional common.Vector3	pos			= 2;
+}
+
+message NotifyRoleAttack
+{
+	optional uint32 globalRoleID		= 1;
+	optional uint32 targetid			= 2;
+	optional uint32 skillID				= 3;
+	optional common.Vector3	pos			= 4;
+}
+
+message NotifyHPChange
+{
+	optional uint32 targetid			= 1;
+	optional int32 hp					= 2;
+}

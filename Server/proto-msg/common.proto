@@ -1,0 +1,98 @@
+
+package common;
+
+message MsgHead
+{
+	required int32 MsgId		= 1;
+	required int32 ActionId		= 2;		
+	required int32 ErrorCode	= 3;
+	required string ErrorInfo 	= 4;
+}
+
+
+
+message Vector3
+{
+	required float x			= 1;
+	required float y			= 2;
+	required float z			= 3;
+}
+
+// 设备类型
+enum MobileType
+{
+	Normal = 0;
+	iPod = 1;
+	iPad = 2;
+	iPhone = 3;
+	Phone_AppStore = 4;
+	Android = 5;
+	Mac = 6;
+	WindowsPhone7 = 7;
+	Unknow = 8;
+}
+
+// 关卡类型
+enum LevelType
+{    
+	Pratice 			= 0;         
+	ActualCombat		= 2;              
+}
+
+
+// 角色类型
+enum RoleType
+{
+	Hero = 0;           // 英雄
+	Soldier = 1;        // 小兵
+	Monster = 2;        // 野怪
+	Tower = 3;           // 塔
+	Doctor = 4;			// 治疗
+}
+
+enum Job
+{
+	Brave = 0;			// 战士
+	Mage = 1;			// 法师
+	Hunter = 2;			// 猎人
+	Priest = 3;			// 牧师
+	Bandit = 4;			// 刺客
+	Building = 11;			// 塔
+}
+
+// 阵营
+enum RoleSide
+{
+	Blue = 1;				// 友方阵营
+	Red = -1;				// 敌对阵营
+	Both = 2;				// 双方
+	Neutrality = 0;			// 中立
+}
+
+enum LoginGuideType
+{
+	CreateRole = 0;			// 创建角色
+	EnterWorld = 1;			// 进入世界
+}
+
+enum RoleControl
+{
+	Free = 0;			
+	UserControl = 1;		
+}
+
+message RoleData
+{
+	optional uint32 UniID		= 1;
+	optional uint32 RoleID		= 2;
+	required RoleType RoleType	= 3;
+	required RoleSide RoleSide	= 4;
+	optional int32 Hp			= 5;
+	optional int32 Mp			= 6;
+	optional Vector3 Pos		= 7;
+	optional Vector3 Dir		= 8;
+	required float SightRange	= 9;
+	required float AttackRange	= 10;
+	optional Job Job			= 11;
+	required RoleControl RoleControl = 12;
+}
