@@ -1,0 +1,40 @@
+UnityEngine = CS.UnityEngine
+GameObject = UnityEngine.GameObject
+Transform = UnityEngine.Transform
+Vector3 = UnityEngine.Vector3
+Quaternion = UnityEngine.Quaternion
+Debug = UnityEngine.Debug
+CharacterController = UnityEngine.CharacterController
+Animator = UnityEngine.Animator
+Input = UnityEngine.Input
+Time = UnityEngine.Time
+Camera = UnityEngine.Camera
+
+local transform
+local ani
+local cc
+local speed = 8
+local rotationSpeed = 10
+local camera
+
+function OnEnter()
+    transform = self.gameObject.transform
+    ani = self.gameObject:GetComponent(typeof(Animator))
+    cc = self.gameObject:GetComponent(typeof(CharacterController))
+    camera = Camera.main
+end
+
+function OnUpdate()
+    
+    local dir = Vector3(Input.GetAxis("Horizontal"),0,Input.GetAxis("Vertical"))
+    local worldDir = camera.transform:TransformDirection(dir).normalized
+    worldDir.y = 0;
+    if(dir.x ~= 0 or dir.z ~= 0) then
+      cc:SimpleMove(worldDir * speed)
+      transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(worldDir),Time.deltaTime * rotationSpeed)
+    else
+      cc:SimpleMove(dir)
+    end 
+    ani:SetFloat("Speed",dir.magnitude)
+end
+ 

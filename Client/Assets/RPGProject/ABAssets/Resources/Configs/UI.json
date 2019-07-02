@@ -1,0 +1,27 @@
+﻿[
+  {
+    "Id": "9001",
+    "UIName": "A",
+    "Prams": null
+  },
+  {
+    "Id": "9002",
+    "UIName": "B",
+    "Prams": null
+  },
+  {
+    "Id": "9003",
+    "UIName": "Login",
+    "Prams": null
+  },
+  {
+    "Id": "9004",
+    "UIName": "D",
+    "Prams": null
+  },
+  {
+    "Id": "9005",
+    "UIName": "E",
+    "Prams": null
+  }
+]

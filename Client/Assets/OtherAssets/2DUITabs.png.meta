@@ -1,0 +1,438 @@
+fileFormatVersion: 2
+guid: 61f9ec99bdd70814d8ca8178375a4bde
+timeCreated: 1560326914
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 2DUITabs_0
+    21300002: 2DUITabs_1
+    21300004: 2DUITabs_2
+    21300006: 2DUITabs_3
+    21300008: 2DUITabs_4
+    21300010: 2DUITabs_5
+    21300012: 2DUITabs_6
+    21300014: 2DUITabs_7
+    21300016: 2DUITabs_8
+    21300018: 2DUITabs_9
+    21300020: 2DUITabs_10
+    21300022: 2DUITabs_11
+    21300024: 2DUITabs_12
+    21300026: 2DUITabs_13
+    21300028: 2DUITabs_14
+    21300030: 2DUITabs_15
+    21300032: 2DUITabs_16
+    21300034: 2DUITabs_17
+    21300036: 2DUITabs_18
+    21300038: 2DUITabs_19
+    21300040: 2DUITabs_20
+    21300042: 2DUITabs_21
+    21300044: 2DUITabs_22
+    21300046: 2DUITabs_23
+    21300048: 2DUITabs_24
+    21300050: 2DUITabs_25
+    21300052: 2DUITabs_26
+    21300054: 2DUITabs_27
+    21300056: 2DUITabs_28
+    21300058: 2DUITabs_29
+    21300060: 2DUITabs_30
+    21300062: 2DUITabs_31
+    21300064: 2DUITabs_32
+    21300066: 2DUITabs_33
+    21300068: 2DUITabs_34
+    21300070: 2DUITabs_35
+    21300072: 2DUITabs_36
+    21300074: 2DUITabs_37
+    21300076: 2DUITabs_39
+    21300078: 2DUITabs_40
+    21300080: 2DUITabs_41
+    21300082: 2DUITabs_42
+    21300084: 2DUITabs_43
+    21300086: 2DUITabs_44
+    21300088: 2DUITabs_45
+    21300090: 2DUITabs_46
+    21300092: 2DUITabs_47
+    21300094: 2DUITabs_48
+    21300096: 2DUITabs_49
+    21300098: 2DUITabs_50
+    21300100: 2DUITabs_51
+    21300102: 2DUITabs_52
+    21300104: 2DUITabs_53
+    21300106: 2DUITabs_54
+    21300108: 2DUITabs_55
+    21300110: 2DUITabs_56
+    21300112: 2DUITabs_57
+    21300114: 2DUITabs_58
+    21300116: 2DUITabs_59
+    21300118: 2DUITabs_60
+    21300120: 2DUITabs_61
+    21300122: 2DUITabs_62
+    21300124: 2DUITabs_63
+    21300126: 2DUITabs_64
+    21300128: 2DUITabs_65
+    21300130: 2DUITabs_66
+    21300132: 2DUITabs_67
+    21300134: 2DUITabs_68
+    21300136: 2DUITabs_69
+    21300138: 2DUITabs_70
+    21300140: 2DUITabs_71
+    21300142: 2DUITabs_72
+    21300144: 2DUITabs_92
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2DUITabs_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 879
+        width: 69
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_1
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 877
+        width: 104
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 4, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_2
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 879
+        width: 64
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_9
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 879
+        width: 64
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_10
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 879
+        width: 98
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_11
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 879
+        width: 64
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_15
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 879
+        width: 64
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_16
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 879
+        width: 94
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_17
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 879
+        width: 102
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_18
+      rect:
+        serializedVersion: 2
+        x: 1844
+        y: 879
+        width: 102
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_27
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 729
+        width: 88
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_28
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 729
+        width: 98
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_29
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 729
+        width: 66
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_52
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 579
+        width: 64
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_53
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 579
+        width: 96
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_54
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 579
+        width: 92
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_70
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 429
+        width: 102
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_71
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 429
+        width: 102
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_72
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 429
+        width: 102
+        height: 145
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUITabs_92
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 178
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

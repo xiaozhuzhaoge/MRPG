@@ -1,0 +1,38 @@
+require("NameSpaces.Sys")
+
+local LoginBtn
+local registerBtn
+local userInput
+local passInput
+local transform 
+local rememberName
+
+function Awake()
+    print("hell")
+    -- body
+    transform = self.gameObject.transform
+    LoginBtn = transform:Find("Login"):GetComponent(typeof(Button))
+    registerBtn = transform:Find("Register"):GetComponent(typeof(Button))
+    userInput = transform:Find("UserName"):GetComponent(typeof(InputField))
+    passInput = transform:Find("Password"):GetComponent(typeof(InputField))
+    rememberName = transform:Find("Remember"):GetComponent(typeof(Toggle))
+     
+    LoginBtn.onClick:AddListener(function() 
+       Login()
+    end)
+    registerBtn.onClick:AddListener(function() 
+        MUIMgr.Instance:OpenUI("Systems/RegisterSystem")
+    end)
+  
+  
+end
+
+function Start()
+    -- body
+    LunaMessage.AddMsgHandler(1001,function(data) 
+    end)
+end
+
+function Login()
+    -- body
+end

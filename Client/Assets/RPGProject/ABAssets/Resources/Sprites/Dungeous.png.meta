@@ -1,0 +1,580 @@
+fileFormatVersion: 2
+guid: 7121f0481e4bbbc4792b26b0b4b1f8c8
+timeCreated: 1560329430
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 2DUIWaypointList_B_0
+    21300002: 2DUIWaypointList_B_1
+    21300004: 2DUIWaypointList_B_2
+    21300006: 2DUIWaypointList_B_3
+    21300008: 2DUIWaypointList_B_4
+    21300010: 2DUIWaypointList_B_5
+    21300012: 2DUIWaypointList_B_6
+    21300014: 2DUIWaypointList_B_7
+    21300016: 2DUIWaypointList_B_8
+    21300018: 2DUIWaypointList_B_9
+    21300020: 2DUIWaypointList_B_10
+    21300022: 2DUIWaypointList_B_11
+    21300024: 2DUIWaypointList_B_12
+    21300026: 2DUIWaypointList_B_13
+    21300028: 2DUIWaypointList_B_14
+    21300030: 2DUIWaypointList_B_15
+    21300032: 2DUIWaypointList_B_16
+    21300034: 2DUIWaypointList_B_17
+    21300036: 2DUIWaypointList_B_18
+    21300038: 2DUIWaypointList_B_19
+    21300040: 2DUIWaypointList_B_20
+    21300042: 2DUIWaypointList_B_21
+    21300044: 2DUIWaypointList_B_22
+    21300046: 2DUIWaypointList_B_23
+    21300048: 2DUIWaypointList_B_24
+    21300050: 2DUIWaypointList_B_25
+    21300052: 2DUIWaypointList_B_26
+    21300054: 2DUIWaypointList_B_27
+    21300056: 2DUIWaypointList_B_28
+    21300058: 2DUIWaypointList_B_29
+    21300060: 2DUIWaypointList_B_30
+    21300062: 2DUIWaypointList_B_31
+    21300064: 2DUIWaypointList_B_32
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 959
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_1
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 959
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_2
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 959
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_3
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 959
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 887
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_5
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 887
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_6
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 887
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_7
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 887
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 815
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_9
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 815
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_10
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 815
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_11
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 815
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 743
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_13
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 743
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_14
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 743
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_15
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 743
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_16
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 671
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_17
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 671
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_18
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 671
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_19
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 671
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_20
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 599
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_21
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 599
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_22
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 599
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_23
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 599
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_24
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 527
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_25
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 527
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_26
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 527
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_27
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 527
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_28
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 455
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_29
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 455
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_30
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 455
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_31
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 455
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DUIWaypointList_B_32
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 383
+        width: 408
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: resources/sprites.nextdorr
+  assetBundleVariant: 

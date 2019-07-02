@@ -1,0 +1,57 @@
+﻿[
+  {
+    "Id": "2",
+    "ClassName": "PlayerConfig",
+    "Path": "Configs/Player",
+    "Container": "PlayerDir"
+  },
+  {
+    "Id": "3",
+    "ClassName": "UIConfig",
+    "Path": "Configs/UI",
+    "Container": "UI"
+  },
+  {
+    "Id": "4",
+    "ClassName": "MessageConfig",
+    "Path": "Configs/Message",
+    "Container": "MessageDir"
+  },
+  {
+    "Id": "6",
+    "ClassName": "PropInfoConfig",
+    "Path": "Configs/Props",
+    "Container": "Props"
+  },
+  {
+    "Id": "7",
+    "ClassName": "JobConfig",
+    "Path": "Configs/Job",
+    "Container": "Jobs"
+  },
+  {
+    "Id": "8",
+    "ClassName": "SignInConfig",
+    "Path": "Configs/SignIn",
+    "Container": "SignIn"
+  },
+  {
+    "Id": "9",
+    "ClassName": "SkillChain",
+    "Path": "Configs/SkillChain",
+    "Container": "Skill"
+  },
+  {
+    "Id": "10",
+    "ClassName": "DungeousConfig",
+    "Path": "Configs/Dungeons",
+    "Container": "Dungeous"
+  },
+  {
+    "Id": "11",
+    "ClassName": "ShopConfig",
+    "Path": "Configs/Shop",
+    "Container": "Shops"
+  }
+
+]

@@ -1,0 +1,146 @@
+﻿[
+  {
+    "Id": "10001",
+    "Name": "石头",
+    "Type": "3",
+    "Icon": "INV_Ingot_Yoggthorite",
+    "Skill": "{}",
+    "CanCombine": "1"
+  },
+  {
+    "Id": "10002",
+    "Name": "木头",
+    "Type": "3",
+    "Icon": "INV_Inscription_Papyrus",
+    "Skill": "{}",
+    "CanCombine": "1"
+  },
+  {
+    "Id": "10003",
+    "Name": "棉花",
+    "Type": "3",
+    "Icon": "INV_Inscription_Scroll",
+    "Skill": "{}",
+    "CanCombine": "1"
+  },
+  {
+    "Id": "10004",
+    "Name": "铁石",
+    "Type": "3",
+    "Icon": "INV_Ore_Platinum_01",
+    "Skill": "{}",
+    "CanCombine": "1"
+  },
+  {
+    "Id": "10005",
+    "Name": "铁钉",
+    "Type": "3",
+    "Icon": "INV_Rod_Platinum",
+    "Skill": "{}",
+    "CanCombine": "1"
+  },
+  {
+    "Id": "10006",
+    "Name": "钢板",
+    "Type": "3",
+    "Icon": "INV_Ingot_Platinum",
+    "Skill": "{}",
+    "CanCombine": "1"
+  },
+  {
+    "Id": "10007",
+    "Name": "碳石",
+    "Type": "3",
+    "Icon": "INV_Crate_08",
+    "Skill": "{}",
+    "CanCombine": "1"
+  },
+  {
+    "Id": "10008",
+    "Name": "木轮子",
+    "Type": "3",
+    "Icon": "INV_Shield_44",
+    "Skill": "{}",
+    "CanCombine": "1"
+  },
+  {
+    "Id": "10009",
+    "Name": "铁锭",
+    "Type": "3",
+    "Icon": "INV_Jewelcrafting_Gem_01",
+    "Skill": "{}",
+    "CanCombine": "1"
+  },
+  {
+    "Id": "10010",
+    "Name": "银锭",
+    "Type": "3",
+    "Icon": "INV_Jewelcrafting_Gem_05",
+    "Skill": "{}",
+    "CanCombine": "1"
+  },
+  {
+    "Id": "10011",
+    "Name": "铜锭",
+    "Type": "3",
+    "Icon": "INV_Jewelcrafting_Gem_02",
+    "Skill": "{}",
+    "CanCombine": "1"
+  },
+  {
+    "Id": "10012",
+    "Name": "金锭",
+    "Type": "3",
+    "Icon": "INV_Jewelcrafting_Gem_03",
+    "Skill": "{}",
+    "CanCombine": "1"
+  },
+  {
+    "Id": "10013",
+    "Name": "炼制元素",
+    "Type": "3",
+    "Icon": "INV_Elemental_Crystal_Fire",
+    "Skill": "{}",
+    "CanCombine": "1"
+  },
+  {
+    "Id": "10014",
+    "Name": "银甲",
+    "Type": "1205",
+    "Icon": "INV_CHEST_LEATHER_16",
+    "Skill": "{\"MaxHp\":100,\"MoveSpeed\":-0.2,\"AtkSpeed\":-0.1,\"Def\":10}",
+    "CanCombine": "0"
+  },
+  {
+    "Id": "10015",
+    "Name": "清风剑",
+    "Type": "1202",
+    "Icon": "Ability_Paladin_SheathofLight",
+    "Skill": "{\"MoveSpeed\":0.2,\"AtkSpeed\":0.1,\"Atk\":10}",
+    "CanCombine": "0"
+  },
+  {
+    "Id": "10016",
+    "Name": "屠龙刀",
+    "Type": "1202",
+    "Icon": "Ability_Warrior_UnrelentingAssault",
+    "Skill": "{\"MaxHp\":1200,\"MoveSpeed\":0.2,\"AtkSpeed\":0.1,\"Atk\":120}",
+    "CanCombine": "0"
+  },
+  {
+    "Id": "10017",
+    "Name": "荆棘甲",
+    "Type": "1205",
+    "Icon": "Ability_Warrior_Vigilance",
+    "Skill": "{\"MaxHp\":2000,\"MoveSpeed\":-1,\"AtkSpeed\":-0.5,\"Def\":30}",
+    "CanCombine": "0"
+  },
+  {
+    "Id": "10018",
+    "Name": "神魔之血",
+    "Type": "1207",
+    "Icon": "Ability_Warlock_ImprovedDemonicTactics",
+    "Skill": "{\"MaxMp\":100}",
+    "CanCombine": "0"
+  }
+]

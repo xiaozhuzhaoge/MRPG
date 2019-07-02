@@ -1,0 +1,28 @@
+UnityEngine = CS.UnityEngine
+GameObject = UnityEngine.GameObject
+Transform = UnityEngine.Transform
+Vector3 = UnityEngine.Vector3
+Quaternion = UnityEngine.Quaternion
+Debug = UnityEngine.Debug
+CharacterController = UnityEngine.CharacterController
+Animator = UnityEngine.Animator
+Input = UnityEngine.Input
+Time = UnityEngine.Time
+
+local transform
+local ani
+local cc
+local speed = 8
+local rotationSpeed = 10
+
+function OnEnter()
+    transform = self.gameObject.transform
+    ani = self.gameObject:GetComponent(typeof(Animator))
+    cc = self.gameObject:GetComponent(typeof(CharacterController))
+end
+
+function OnUpdate()
+    
+    
+end
+ 

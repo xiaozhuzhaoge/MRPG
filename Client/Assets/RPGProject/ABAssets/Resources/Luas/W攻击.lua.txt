@@ -1,0 +1,35 @@
+UnityEngine = CS.UnityEngine
+GameObject = UnityEngine.GameObject
+Transform = UnityEngine.Transform
+Vector3 = UnityEngine.Vector3
+Quaternion = UnityEngine.Quaternion
+Debug = UnityEngine.Debug
+CharacterController = UnityEngine.CharacterController
+Animator = UnityEngine.Animator
+Input = UnityEngine.Input
+Time = UnityEngine.Time
+Random = UnityEngine.Random
+NavMeshAgent = UnityEngine.AI.NavMeshAgent
+PlayMakerFSM = CS.PlayMakerFSM
+
+ local gameObject
+ local player
+ local agent
+ local fsm
+
+function OnEnter()
+    gameObject = self.gameObject
+    agent = gameObject:GetComponent(typeof(NavMeshAgent))
+    player = GameObject.FindGameObjectWithTag("Player").transform
+    fsm = gameObject:GetComponent(typeof(PlayMakerFSM))
+    
+    agent.enabled = false
+    
+    --旋转逻辑
+    local dir = (player.position - gameObject.transform.position).normalized
+    dir.y = 0
+    gameObject.transform.rotation = Quaternion.LookRotation(dir)
+end
+
+
+

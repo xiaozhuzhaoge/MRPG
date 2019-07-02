@@ -1,0 +1,56 @@
+UnityEngine = CS.UnityEngine
+GameObject = UnityEngine.GameObject
+Transform = UnityEngine.Transform
+Vector3 = UnityEngine.Vector3
+Debug = UnityEngine.Debug
+Input = UnityEngine.Input
+Time = UnityEngine.Time
+Camera = UnityEngine.Camera
+UI = UnityEngine.UI
+Button = UI.Button
+Toggle = UI.Toggle
+InputField = UI.InputField
+MUIMgr = CS.MUIMgr
+LunaMessage = CS.LunaMessage
+MobaNetwork = CS.MobaNetwork
+ProtoBufUtils = CS.ProtoBufUtils
+RegisterReq = CS.proto.Pb.RegisterReq
+RegisterRes = CS.proto.Pb.RegisterRes
+
+local registerBtn
+local userInput
+local passInput
+local rePassInput
+local transform 
+local closeBtn
+
+function Awake( ... )
+    -- body
+    transform = self.gameObject.transform
+    
+    registerBtn = transform:Find("Register"):GetComponent(typeof(Button))
+    userInput = transform:Find("UserName"):GetComponent(typeof(InputField))
+    passInput = transform:Find("Password"):GetComponent(typeof(InputField))
+    rePassInput = transform:Find("RePassword"):GetComponent(typeof(InputField))
+    closeBtn = transform:Find("Close"):GetComponent(typeof(Button))
+    registerBtn.onClick:AddListener(function() 
+        local req = RegisterReq()
+        req.UserName = userInput.text
+        req.Password = passInput.text
+        req.PhoneNum:Add("13002345045")
+        MobaNetwork.Send(1001,req)
+    end)
+    closeBtn.onClick:AddListener(function( ... )
+        self:Back()
+    end)
+end
+
+function Start()
+    -- body
+    LunaMessage.AddMsgObjectHandler(1002,function(data)
+        Debug.Log(pbdata)
+    end)
+end
+
+ 
+ 

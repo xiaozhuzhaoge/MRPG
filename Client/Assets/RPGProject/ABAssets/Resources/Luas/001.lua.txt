@@ -1,0 +1,25 @@
+UnityEngine = CS.UnityEngine
+GameObject = UnityEngine.GameObject
+Transform = UnityEngine.Transform
+Vector3 = UnityEngine.Vector3
+Quaternion = UnityEngine.Quaternion
+Debug = UnityEngine.Debug
+CharacterController = UnityEngine.CharacterController
+Animator = UnityEngine.Animator
+Input = UnityEngine.Input
+Time = UnityEngine.Time
+
+local transform
+local speed = 8
+local player
+local offset = Vector3(6,10,-6)
+
+function Start()
+    transform = self.gameObject.transform
+    player = GameObject.FindGameObjectWithTag("Player")
+end
+
+function LateUpdate()
+    transform.position = player.transform.position + offset
+end
+ 

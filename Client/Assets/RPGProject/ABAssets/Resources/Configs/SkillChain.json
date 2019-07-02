@@ -1,0 +1,258 @@
+﻿[
+  {
+    "Id": "410001",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_01",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.351,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":50,\"RayNum\":10,\"Distance\":0,\"HitEffect\":\"Slash01\",\"ReParent\": true,\n        \"AppearEffect\": {\n            \"LocalPosition\": \"0,1,2.1\",\n            \"LocalDir\": \"0,0,1\",\n            \"Duration\": 10,\n            \"EffectName\": \"fireball\",\"ReParent\":true\n        }},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410002",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_02",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.234,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":50,\"RayNum\":10,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410003",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_03",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.292,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":50,\"RayNum\":10,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410004",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_04",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.232,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":50,\"RayNum\":10,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410005",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_05",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.263,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":50,\"RayNum\":10,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410006",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_06",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.257,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":50,\"RayNum\":10,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410007",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_07",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.215,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":50,\"RayNum\":10,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410008",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_08",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.264,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":50,\"RayNum\":10,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410009",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_09",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.406,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":50,\"RayNum\":10,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410010",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_10",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.225,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":50,\"RayNum\":10,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410011",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_11",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.445,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":50,\"RayNum\":10,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410012",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_12",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.287,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":50,\"RayNum\":10,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410013",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_13",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.357,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":360,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\",\"AppearEffect\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Duration\":2,\"EffectName\":\"CycleAttack\"}},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410014",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_13",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.417,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":360,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410015",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_13",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.463,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":360,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410016",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_13",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.52,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":360,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410017",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_13",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.554,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":360,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410018",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_13",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.589,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":360,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410019",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_13",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.619,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":360,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410020",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_13",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.643,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":360,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410021",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_13",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.674,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":360,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410022",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_13",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.7,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":360,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410023",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_13",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.76,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":360,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410024",
+    "GroupId": "1002",
+    "AnimationStateName": "Attack_13",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.85,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":360,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410025",
+    "GroupId": "1003",
+    "AnimationStateName": "OrientalSword_SINGLEATTACK01",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.239,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":80,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410026",
+    "GroupId": "1003",
+    "AnimationStateName": "OrientalSword_SINGLEATTACK02",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.31,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":70,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410027",
+    "GroupId": "1003",
+    "AnimationStateName": "OrientalSword_SINGLEATTACK03",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.129,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":50,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410028",
+    "GroupId": "1003",
+    "AnimationStateName": "OrientalSword_SINGLEATTACK04",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.169,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":100,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410029",
+    "GroupId": "1003",
+    "AnimationStateName": "OrientalSword_SINGLEATTACK05",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.143,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":100,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":2.0}\n"
+  },
+  {
+    "Id": "410030",
+    "GroupId": "1003",
+    "AnimationStateName": "OrientalSword_COMBOATTACK06",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.103,
+    "Instruction": "\n{\"Type\":\"ThrowBoxPenetrated\",\"ThrowAttackType\":{\n        \"LocalPosition\": \"0,1.5,0\",\n        \"LocalDir\" : \"0,0,1\",\n        \"Distance\": 10,\n        \"HitEffect\": \"Slash01\",\n        \"Duration\" : 4,\n        \"Speed\" : 5,\n        \"Appearance\": \"fireball\",\n        \"ReParent\": false\n    },\"SkillAttack\":5.0}\n"
+  },
+  {
+    "Id": "410031",
+    "GroupId": "1003",
+    "AnimationStateName": "OrientalSword_COMBOATTACK06",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.441,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":100,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  },
+  {
+    "Id": "410032",
+    "GroupId": "1003",
+    "AnimationStateName": "OrientalSword_COMBOATTACK06",
+    "FunctionName": "CastEffect",
+    "DoPercent": 0.69,
+    "Instruction": "\n{\"Type\":\"Radius\",\"NearAttackType\":{\"LocalPosition\":\"0,0,0\",\"LocalDir\":\"0,0,1\",\"Radius\":3,\"Angle\":360,\"RayNum\":30,\"Distance\":0,\"HitEffect\":\"Slash01\"},\"SkillAttack\":1.0}\n"
+  }
+]

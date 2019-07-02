@@ -1,0 +1,273 @@
+enum MessageId {
+   ERegisterReq = 1001;
+   ERegisterRes = 1002;
+   EServerRes = 1003;
+   ELoginReq = 1006;
+   ELoginRes = 1007;
+   EGetPlayerInfosReq = 1008;
+   EGetPlayerInfosRes = 1009;
+   ECreatePlayerInfoReq = 1010;
+   ECreatePlayerInfoRes = 1011;
+   ESelectPlayerReq = 1012;
+   ESelectPlayerRes = 1013;
+   ESignInReq  = 1014;
+   ESignInRes = 1015;
+   EBagInfoEquipReq  = 1016;
+   EBagInfoEquipRes  = 1017;
+   EBagInfoReq = 1018;
+   EBagInfoRes = 1019;
+   EUsePropReq = 1020;
+   EUsePropRes = 1021;
+   EEnchancePropReq = 1022;
+   EEnchancePropRes = 1023;
+   EEnterDungeonsReq = 1024;
+   EEnterDungeonsRes = 1025;
+   EFinishDungeonsReq = 1026;
+   EFinishDungeonsRes = 1027;
+   EBuyPropReq = 1028;
+   EBuyPropRes = 1029;
+}
+
+
+//状态码数据
+message StateCode {
+   required int32 status = 1; // 0 OK 1 FAIL 
+   optional string message = 2; //反馈消息机制
+}
+
+//注册请求
+message RegisterReq {
+  required string username = 1;
+  required string password = 2;
+  optional string deviceID = 3; //设备ID
+  optional string channel = 4; // 渠道号
+}
+
+//服务器消息
+message ServerInfo{
+   required int32 id = 1;
+   required string serverName = 2;
+   required string serverIp = 3;
+   enum StateType{
+      UNBLOCKED = 0;//畅通
+      CROWD = 1;//拥挤
+      BLOCKED = 2;//锁
+   }
+   required StateType type = 4;
+}
+
+//HTTP GET 获取服务器列表数据 以下是反馈信息格式
+///服务器数据反馈
+message ServerRes {
+   repeated ServerInfo servers = 1;
+}
+
+//注册反馈
+message RegisterRes {
+   required StateCode code = 1;
+}
+
+//登录请求消息体
+message LoginReq{
+   required string username = 1;
+   required string password = 2;
+   required string serverIp = 3;//登陆的游戏服务器IP
+}
+
+//登录反馈消息体
+message LoginRes {
+    required int32 accountId = 1;//账号ID
+    required StateCode code = 2;
+}
+
+//角色信息
+message PlayerInfo {
+    required int32 id = 1;
+    required string name = 2;
+    required int32 type = 3;//职业类型ID
+}
+
+//获取角色信息请求
+message GetPlayerInfosReq {
+    required int32 accountId = 1;
+}
+
+//获取角色信息反馈
+message GetPlayerInfosRes{
+    required StateCode code = 1;
+    repeated PlayerInfo infos = 2;//角色信息链表
+}
+
+//创建角色请求
+message CreatePlayerInfoReq {
+    required string accountId = 1;//账户id
+    required string name = 2;//名字
+    required int32 type = 3;//职业类型
+}
+
+//创建角色反馈
+message CreatePlayerInfoRes {
+    required StateCode code = 1;
+    required PlayerInfo info = 2;
+}
+
+//选择角色进入游戏服务器请求
+message SelectPlayerReq {
+    required int32 id = 1;//角色id
+    required string gameServerIp = 2;
+}
+
+//道具信息
+message PropInfo {
+    required int32 id = 1;
+    required int32 propId = 2;
+    required int32 num = 3;
+    required int32 slot = 4;//装备槽索引 装备槽一共8个 1201 - 1208 背包索引为 0 - 1200  超出范围则不能装备
+}
+
+//角色状态信息
+message PlayerStateInfo {
+    required int32 level = 1;
+    repeated string localtion = 2;
+}
+
+///角色基本完整数据消息体
+message PlayerRoleInfo {
+    required PlayerInfo info = 1;//角色基本数据
+    repeated PropInfo bagInfo = 2;//背包数据 包含装备与道具状态
+    optional int32 bloodStore =3;
+    optional int32 gold = 4;
+    optional int32 gem = 5;
+}
+
+///时间信息
+message TimeInfo {
+    required int64 time = 1;//服务器时间Tick 毫秒
+}
+
+//选择角色登录反馈
+message SelectPlayerRes {
+    required StateCode code = 1;
+    required PlayerRoleInfo roleInfo = 2;
+    required PlayerStateInfo stateInfo = 3;
+    required TimeInfo time = 4;
+    repeated SignInInfo infos = 5;
+}
+
+message SignInInfo{
+   required TimeInfo time = 1;
+   required int32 signId = 2;
+}
+
+//签到请求
+message SignInReq {
+   required TimeInfo SignInTime = 1;
+   required int32 signId = 2;//签到表Id 服务器需验证签到时间与领取时间的不同
+}
+
+//签到反馈
+message SignInRes{
+   required StateCode code = 1;//状态码
+   required TimeInfo serverTime = 2;//获取的服务器时间
+   repeated PropInfo propInfo = 3;//获取的道具信息
+}
+
+///背包数据请求
+message BagInfoReq{
+   required int32 playerId = 1;//角色ID
+}
+
+///背包数据反馈
+message BagInfoRes {
+   required StateCode code = 1;
+   repeated PropInfo bagInfo = 2;//背包数据 获取背包所有数据
+}
+
+///装备道具请求数据体
+message EquipPropInfo {
+   required int32 id = 1;//道具实例ID
+   required int32 propId = 2;//道具配置ID
+   required int32 slot = 3;//装备槽索引 装备槽一共8个 1201 - 1208 背包索引为 0 - 1200 超出范围则不能装备 精简逻辑道具不再做道具拆分功能
+}
+
+//道具装备请求
+message BagInfoEquipReq {
+   required int32 playerId = 1;//角色ID
+   repeated EquipPropInfo equipedProps = 2;//装备道具信息
+}
+
+//道具装备反馈
+message BagInfoEquipRes {
+   required StateCode code = 1;
+   repeated PropInfo propInfos = 2;//更新的道具数据
+}
+
+///使用道具信息
+message UserPropInfo {
+   required int32 id = 1;//道具实例ID
+   required int32 num = 2;//使用数量
+}
+
+//使用道具请求
+message UsePropReq{
+   repeated UserPropInfo props = 1;//使用的道具
+}
+
+//使用道具反馈
+message UsePropRes{
+    required StateCode code = 1;
+    repeated PropInfo bagInfo = 2;//背包数据 获取角色背包的所有数据
+}
+
+
+//强化道具请求
+message EnchancePropReq{
+   required int32 enchangeId = 1;//道具实例ID
+   repeated UserPropInfo props = 2;//使用素材
+}
+
+//强化道具反馈
+message EnchancePropRes {
+    required StateCode code = 1;
+    repeated PropInfo bagInfo = 2;//背包数据 获取角色背包的所有数据
+}
+
+ 
+//进入闭线副本请求
+message EnterDungeonsReq {
+   required int32 id = 1;//玩家ID
+   required int32 dungeons = 2;//副本Id 
+}
+
+//进入副本反馈
+message EnterDungeonsRes {
+    required StateCode code = 1;
+    required PlayerStateInfo state = 2;
+}
+
+//结算副本请求
+message FinishDungeonsReq {
+    required PlayerStateInfo state = 1;//玩家当前状态
+    required int32 monsterId = 2;//对应怪物Id
+}
+
+//结算副本反馈
+message FinishDungeonsRes {
+    required StateCode code = 1;
+    repeated PropInfo newProps = 2;//新的道具数据
+}
+
+//购买装备请求
+message BuyPropReq {
+    required int32 storeId = 1;//商店道具ID
+    required int32 num = 2;//购买数量
+    required int32 id = 3;//玩家ID
+}
+//购买装备反馈
+message BuyPropRes {
+   required StateCode code = 1; //返回
+   repeated PropInfo bagInfo = 2; //背包信息
+   optional int32 gold = 3;//金币
+   optional int32 gem = 4;//水晶
+   optional int32 bloodStore = 5;//血石
+}

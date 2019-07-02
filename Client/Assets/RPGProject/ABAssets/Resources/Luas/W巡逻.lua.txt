@@ -1,0 +1,55 @@
+UnityEngine = CS.UnityEngine
+GameObject = UnityEngine.GameObject
+Transform = UnityEngine.Transform
+Vector3 = UnityEngine.Vector3
+Quaternion = UnityEngine.Quaternion
+Debug = UnityEngine.Debug
+CharacterController = UnityEngine.CharacterController
+Animator = UnityEngine.Animator
+Input = UnityEngine.Input
+Time = UnityEngine.Time
+Random = UnityEngine.Random
+NavMeshAgent = UnityEngine.AI.NavMeshAgent
+PlayMakerFSM = CS.PlayMakerFSM
+
+ local gameObject
+ local seekR = 20
+ local orignalPos
+ local player
+ local agent
+ local followR = 10
+ local currentSeekPos
+ local fsm
+ local ani
+
+function OnEnter()
+    gameObject = self.gameObject
+    agent = gameObject:GetComponent(typeof(NavMeshAgent))
+    ani = gameObject:GetComponent(typeof(Animator))
+    player = GameObject.FindGameObjectWithTag("Player").transform
+    fsm = gameObject:GetComponent(typeof(PlayMakerFSM))
+
+    if(orignalPos == nil) then
+        orignalPos = gameObject.transform.position
+    end
+    agent.enabled = true
+    currentSeekPos = orignalPos + Vector3(Random.Range(-seekR,seekR),0,Random.Range(-seekR,seekR))
+end
+
+function OnUpdate()
+     
+    local distanceWithPlayer = Vector3.Distance(gameObject.transform.position,player.position)
+    if(distanceWithPlayer <= followR) then
+      fsm:SetState("追击") 
+    end
+
+    local distance_seek = Vector3.Distance(gameObject.transform.position, currentSeekPos)
+    if(distance_seek < 1) then
+        currentSeekPos = orignalPos + Vector3(Random.Range(-seekR,seekR),0,Random.Range(-seekR,seekR))
+    end
+
+    agent:SetDestination(currentSeekPos)
+    ani:SetFloat("Speed",agent.velocity.magnitude)
+end
+
+

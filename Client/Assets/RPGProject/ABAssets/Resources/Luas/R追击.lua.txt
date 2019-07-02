@@ -1,0 +1,55 @@
+UnityEngine = CS.UnityEngine
+GameObject = UnityEngine.GameObject
+Transform = UnityEngine.Transform
+Vector3 = UnityEngine.Vector3
+Quaternion = UnityEngine.Quaternion
+Debug = UnityEngine.Debug
+CharacterController = UnityEngine.CharacterController
+Animator = UnityEngine.Animator
+Input = UnityEngine.Input
+Time = UnityEngine.Time
+Random = UnityEngine.Random
+NavMeshAgent = UnityEngine.AI.NavMeshAgent
+PlayMakerFSM = CS.PlayMakerFSM
+
+ local gameObject
+ local player -- 玩家
+ local agent --寻路组件
+ local followR = 10 --警戒范围
+ local attackR = 1.5 --攻击范围
+ local fsm -- PlayerMakerFsm
+ local ani -- 动画器
+
+function OnEnter()
+    gameObject = self.gameObject
+    agent = gameObject:GetComponent(typeof(NavMeshAgent))
+    ani = gameObject:GetComponent(typeof(Animator))
+    player = GameObject.FindGameObjectWithTag("Player").transform
+    fsm = gameObject:GetComponent(typeof(PlayMakerFSM))
+    
+   
+end
+
+function OnUpdate()
+     
+
+    --SendEvent && SetState
+    --
+
+    local distance = Vector3.Distance(gameObject.transform.position,player.position)
+    
+    agent:SetDestination(player.position)
+    
+    if(distance > followR)then
+        fsm:SetState("巡逻")
+    end
+
+    if(distance <= attackR)then
+        fsm:SetState("攻击")
+    end
+    
+   
+    ani:SetFloat("Speed", agent.velocity.magnitude)
+end
+
+

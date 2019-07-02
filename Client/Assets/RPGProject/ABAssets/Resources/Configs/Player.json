@@ -1,0 +1,86 @@
+﻿[
+  {
+    "Id": "10001",
+    "Name": "骑士(玩家)",
+    "Atk": 30.0,
+    "Def": 30.0,
+    "Cri": 25.0,
+    "Adv": 10.0,
+    "Hp": 200000.0,
+    "SkillGroup": "{\"MaxHp\":100,\"MoveSpeed\":0.2,\"AtkSpeed\":0.1,\"Atk\":10}",
+    "AtkSpeed": 1.0,
+    "MoveSpeed": 3.5
+  },
+  {
+    "Id": "10002",
+    "Name": "忍者红",
+    "Atk": 20.0,
+    "Def": 10.0,
+    "Cri": 10.0,
+    "Adv": 20.0,
+    "Hp": 120.0,
+    "SkillGroup": "{}",
+    "AtkSpeed": 1.0,
+    "MoveSpeed": 2.5
+  },
+  {
+    "Id": "10003",
+    "Name": "忍者绿",
+    "Atk": 22.0,
+    "Def": 12.0,
+    "Cri": 12.0,
+    "Adv": 30.0,
+    "Hp": 100.0,
+    "SkillGroup": "{}",
+    "AtkSpeed": 1.0,
+    "MoveSpeed": 2.8
+  },
+  {
+    "Id": "10004",
+    "Name": "武士红",
+    "Atk": 40.0,
+    "Def": 15.0,
+    "Cri": 15.0,
+    "Adv": 15.0,
+    "Hp": 350.0,
+    "SkillGroup": "{}",
+    "AtkSpeed": 1.0,
+    "MoveSpeed": 3.0
+  },
+  {
+    "Id": "10005",
+    "Name": "村长",
+    "Atk": 40.0,
+    "Def": 15.0,
+    "Cri": 15.0,
+    "Adv": 15.0,
+    "Hp": 350.0,
+    "SkillGroup": "{}",
+    "AtkSpeed": 1.0,
+    "MoveSpeed": 3.0
+  },
+  {
+    "Id": "10006",
+    "Name": "地下城守卫",
+    "Atk": 40.0,
+    "Def": 15.0,
+    "Cri": 15.0,
+    "Adv": 15.0,
+    "Hp": 350.0,
+    "SkillGroup": "{}",
+    "AtkSpeed": 1.0,
+    "MoveSpeed": 3.0
+  },
+  {
+    "Id": "10007",
+    "Name": "村女",
+    "Atk": 40.0,
+    "Def": 15.0,
+    "Cri": 15.0,
+    "Adv": 15.0,
+    "Hp": 350.0,
+    "SkillGroup": "{}",
+    "AtkSpeed": 1.0,
+    "MoveSpeed": 3.0
+  }
+]
