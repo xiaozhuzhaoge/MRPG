@@ -33,6 +33,31 @@ public class MsgHandler
         BuyPropRes res = new BuyPropRes();
         res.code = new StateCode();
         ShopConfig config = JsonHelper.GetShopProp(req.storeId.ToString());
+        ///修改货币数量
+        int myCoin = MobaDB.GetCoin(user._roleId, Convert.ToInt32(config.Cost_Type));
+
+        RoleList role = MobaDB.GetRoleInfo(user._roleId);
+        ///货币不够
+        if(myCoin < Convert.ToInt32(config.Cost_Num))
+        {
+            res.code.status = 1;
+            res.code.message = "你的货币不够,无法购买";
+            List<proto.MyProto.PropInfo> list = MobaDB.GetRoleProp(req.id);
+            foreach (proto.MyProto.PropInfo item in list)
+            {
+                res.bagInfo.Add(item);
+            }
+            res.gem = role.gem;
+            res.gold = role.gold;
+            res.bloodStore = role.bloodstore;
+            MobaNetwork.Send(user, res, (ushort)MessageId.EBuyPropRes);
+            return;
+        }
+
+        myCoin -= Convert.ToInt32(config.Cost_Num);
+        MobaDB.ChangeCoin(user._roleId, Convert.ToInt32(config.Cost_Type), myCoin);
+        role = MobaDB.GetRoleInfo(user._roleId);
+        ///添加道具
         if (MobaDB.AddProp(req.id, Convert.ToInt32(config.PropId), req.num, 0))
         {
             res.code.status = 0;
@@ -41,10 +66,21 @@ public class MsgHandler
             {
                 res.bagInfo.Add(item);
             }
+            res.gem = role.gem;
+            res.gold = role.gold;
+            res.bloodStore = role.bloodstore;
         }
         else
         {
             res.code.status = 1;
+            List<proto.MyProto.PropInfo> list = MobaDB.GetRoleProp(req.id);
+            foreach (proto.MyProto.PropInfo item in list)
+            {
+                res.bagInfo.Add(item);
+            }
+            res.gem = role.gem;
+            res.gold = role.gold;
+            res.bloodStore = role.bloodstore;
         }
         MobaNetwork.Send(user, res, (ushort)MessageId.EBuyPropRes);
     }
@@ -123,7 +159,7 @@ public class MsgHandler
         res.code = new StateCode();
         res.serverTime = new TimeInfo();
         
-        if (MobaDB.SetSginIn(user._accountId, req.signId, req.SignInTime))
+        if (MobaDB.SetSginIn(user._roleId, req.signId, req.SignInTime))
         {
             res.serverTime.time = TimeHelper.GetMSTime();
             PropInfo p = JsonHelper.GetSiginJson(req.signId);
@@ -134,7 +170,7 @@ public class MsgHandler
             propInfo.slot = p.slot;
             if (propInfo == null)
                 return;
-            int Id = MobaDB.SetSignPropToBag(user._accountId, p);
+            int Id = MobaDB.SetSignPropToBag(user._roleId, p);
             if (Id == -1)
             {
                 res.code.status = 1;
@@ -249,7 +285,7 @@ public class MsgHandler
             /////////////////////////签到记录返回
 
             res.code.status = 0;
-            user._accountId = req.id;
+            user._roleId = req.id;
         }
         MobaNetwork.Send(user, res, (ushort)MessageId.ESelectPlayerRes);
     }

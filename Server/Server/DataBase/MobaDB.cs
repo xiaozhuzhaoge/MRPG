@@ -70,6 +70,105 @@ public class MobaDB
         return null;
     }
 
+    /// <summary>
+    /// 获取货币数量
+    /// </summary>
+    /// <param name="roleId"></param>
+    /// <param name="coinType"></param>
+    /// <returns></returns>
+    public static int GetCoin(int roleId,int coinType)
+    {
+  
+        string coinItem = "gold";
+        if (coinType == 2)
+            coinItem = "bloodstore";
+        if (coinType == 3)
+            coinItem = "gem";
+
+        string sql = string.Format("select * from role where userId = '{0}'", roleId);
+        try
+        {
+
+            List<object> datas = _mysql.ExecQuery<RoleList>(sql);
+            if (datas.Count > 0)
+            {
+                RoleList ro = datas[0] as RoleList;
+                if (coinItem == "gold")
+                {
+                    return ro.gold;
+                }
+                else if (coinItem == "bloodstore")
+                {
+                    return ro.bloodstore;
+                }
+                else
+                {
+                    return ro.gem;
+                }
+            }
+            else
+                return 0;
+        }
+        catch (Exception e)
+        {
+            return 0;
+        }
+    }
+
+    /// <summary>
+    /// 获取角色数据
+    /// </summary>
+    /// <param name="roleId"></param>
+    /// <returns></returns>
+    public static RoleList GetRoleInfo(int roleId)
+    {
+
+        string sql = string.Format("select * from role where userId = '{0}'", roleId);
+        try
+        {
+
+            List<object> datas = _mysql.ExecQuery<RoleList>(sql);
+            if (datas.Count > 0)
+            {
+                RoleList ro = datas[0] as RoleList;
+                return ro;
+            }
+            else
+                return null;
+        }
+        catch (Exception e)
+        {
+            return null;
+        }
+    }
+
+    /// <summary>
+    /// 改变货币数量
+    /// </summary>
+    /// <param name="accountId"></param>
+    /// <param name="coinType"></param>
+    /// <param name="value"></param>
+    /// <returns></returns>
+    public static bool ChangeCoin(int roleId,int coinType,int value)
+    {
+        string coinItem = "gold";
+        if (coinType == 2)
+            coinItem = "bloodstore";
+        if (coinType == 3)
+            coinItem = "gem";
+
+        string sql = string.Format("update role set {0}={1} where userId='{2}'",coinItem,value, roleId);
+        try
+        {
+            _mysql.ExecNonQuery(sql);
+            return true;
+        }
+        catch (Exception e)
+        {
+            return false;
+        }
+    }
+
     public static int GetPropNum(int roleId,int instanceId)
     {
         List<object> props = GetPropbyInstanceId(roleId, instanceId);

@@ -1003,6 +1003,33 @@ namespace proto.MyProto
       get { return _bagInfo; }
     }
   
+
+    private int _gold = default(int);
+    [global::ProtoBuf.ProtoMember(3, IsRequired = false, Name=@"gold", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
+    public int gold
+    {
+      get { return _gold; }
+      set { _gold = value; }
+    }
+
+    private int _gem = default(int);
+    [global::ProtoBuf.ProtoMember(4, IsRequired = false, Name=@"gem", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
+    public int gem
+    {
+      get { return _gem; }
+      set { _gem = value; }
+    }
+
+    private int _bloodStore = default(int);
+    [global::ProtoBuf.ProtoMember(5, IsRequired = false, Name=@"bloodStore", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    [global::System.ComponentModel.DefaultValue(default(int))]
+    public int bloodStore
+    {
+      get { return _bloodStore; }
+      set { _bloodStore = value; }
+    }
     private global::ProtoBuf.IExtension extensionObject;
     global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
       { return global::ProtoBuf.Extensible.GetExtensionObject(ref extensionObject, createIfMissing); }
